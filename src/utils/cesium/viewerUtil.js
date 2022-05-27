@@ -13,7 +13,7 @@ const {
 // 视图定位到中国范围内
 Camera.DEFAULT_VIEW_RECTANGLE = Rectangle.fromDegrees(90, -20, 110, 90)
 // 通过摄像机视口来设置cesium地球大小，0 表示地球填满视窗，越大于0表示地球距离视口越远，越小于0表示距离地球视口越近
-Camera.DEFAULT_VIEW_FACTOR = 0.5
+Camera.DEFAULT_VIEW_FACTOR = 0.2
 
 /**
  * @description 初识化Viewer
@@ -99,7 +99,7 @@ const viewerInit = (cesiumContainer) => {
   viewer.scene.screenSpaceCameraController.inertiaZoom = 0
   //关闭深度测试
   viewer.scene.globe.depthTestAgainstTerrain = false
-  // setView(viewer)
+  setView(viewer)
   return viewer
 }
 
