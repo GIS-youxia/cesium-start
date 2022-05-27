@@ -10,6 +10,11 @@ const routes = [
     name: 'Home',
     component: Home,
   },
+  {
+    path:'/quickStart',
+    name:'QuickStart',
+    component:()=>import('@/views/quickStart')
+  }
 ]
 
 const router = new VueRouter({
