@@ -4,14 +4,28 @@
     @date 2022-05-27 14:56:10 
  -->
 <template>
-    <div class="home-container"></div>
+  <div class="home-container">
+    <router-link to="/quickstart" class="nav-item">quickStart</router-link>
+    <router-link to="/widget" class="nav-item">widget</router-link>
+  </div>
 </template>
 <script>
+import Widget from '@/views/widget'
 export default {
-    name:'Home',
-    components:{},
-    methods: {},
+  name: 'Home',
+  components: { Widget },
+  methods: {},
 }
 </script>
 <style lang="scss" scoped>
+.home-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .nav-item {
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
 </style>

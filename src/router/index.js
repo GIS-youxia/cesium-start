@@ -14,7 +14,12 @@ const routes = [
     path:'/quickStart',
     name:'QuickStart',
     component:()=>import('@/views/quickStart')
-  }
+  },
+  {
+    path:'/widget',
+    name:'Widget',
+    component:()=>import('@/views/widget')
+  },
 ]
 
 const router = new VueRouter({
