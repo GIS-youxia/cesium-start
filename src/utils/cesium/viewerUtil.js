@@ -9,7 +9,7 @@ const {
   Clock,
   SceneMode,
   viewerPerformanceWatchdogMixin
-} = Cesium
+} = window.Cesium
 // 视图定位到中国范围内
 Camera.DEFAULT_VIEW_RECTANGLE = Rectangle.fromDegrees(100,10,120,70)
 // 通过摄像机视口来设置cesium地球大小，0 表示地球填满视窗，越大于0表示地球距离视口越远，越小于0表示距离地球视口越近
