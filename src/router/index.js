@@ -11,14 +11,19 @@ const routes = [
     component: Home,
   },
   {
-    path:'/quickStart',
-    name:'QuickStart',
-    component:()=>import('@/views/quickStart')
+    path: '/quickStart',
+    name: 'QuickStart',
+    component: () => import('@/views/base/quickStart'),
   },
   {
-    path:'/widget',
-    name:'Widget',
-    component:()=>import('@/views/widget')
+    path: '/widget',
+    name: 'Widget',
+    component: () => import('@/views/base/widget'),
+  },
+  {
+    path: '/viewer',
+    name: 'Viewer',
+    component: () => import('@/views/base/viewer'),
   },
 ]
 

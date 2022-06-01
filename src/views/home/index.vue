@@ -7,6 +7,7 @@
   <div class="home-container">
     <router-link to="/quickstart" class="nav-item">quickStart</router-link>
     <router-link to="/widget" class="nav-item">widget</router-link>
+    <router-link to="/viewer" class="nav-item">Viewer</router-link>
   </div>
 </template>
 <script>

@@ -16,6 +16,7 @@ export default {
     init() {
       const el = this.$refs['widgetDom']
       const widget = new Cesium.CesiumWidget(el)
+      console.log(widget)
     },
   },
 }
