@@ -42,6 +42,8 @@ export default {
       })
       // 去掉cesium的标识
       viewer._cesiumWidget._creditContainer.style.display = 'none'
+      // 显示帧率
+      viewer.scene.debugShowFramesPerSecond = true
     },
   },
 }

@@ -11,11 +11,8 @@
   </div>
 </template>
 <script>
-import Widget from '@/views/widget'
 export default {
   name: 'Home',
-  components: { Widget },
-  methods: {},
 }
 </script>
 <style lang="scss" scoped>
