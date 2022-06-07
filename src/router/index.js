@@ -26,9 +26,14 @@ const routes = [
     component: () => import('@/views/base/viewer'),
   },
   {
-    path: '/3dmodel',
+    path: '/addModelByEntity',
     name: 'Model',
-    component: () => import('@/views/base/model/glb/index.vue'),
+    component: () => import('@/views/base/model/byEntities'),
+  },
+  {
+    path: '/addModelByPrimitives',
+    name: 'addModelByPrimitives',
+    component: () => import('@/views/base/model/byPrimitives'),
   },
 ]
 

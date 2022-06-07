@@ -8,7 +8,8 @@
     <router-link to="/quickstart" class="nav-item">quickStart</router-link>
     <router-link to="/widget" class="nav-item">widget</router-link>
     <router-link to="/viewer" class="nav-item">Viewer</router-link>
-    <router-link to="/3dmodel" class="nav-item">3D-model</router-link>
+    <router-link to="/addModelByEntity" class="nav-item">addModelByEntity</router-link>
+    <router-link to="/addModelByPrimitives" class="nav-item">addModelByPrimitives</router-link>
   </div>
 </template>
 <script>

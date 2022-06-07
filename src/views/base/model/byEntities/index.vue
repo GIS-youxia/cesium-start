@@ -104,6 +104,7 @@ export default {
         shadows: true,
         shouldAnimate: true,
       })
+      window.viewer = viewer
       const url = '/data/SampleData/models/CesiumAir/Cesium_Air.glb'
       const height = 5000
       this.handleCreateModel(url, height)
@@ -149,8 +150,8 @@ export default {
   width: 100%;
   .model-switcher {
     position: absolute;
-    top: 50px;
-    right: 10px;
+    top: 30px;
+    left: 10px;
     z-index: 99;
   }
 }
