@@ -25,6 +25,11 @@ const routes = [
     name: 'Viewer',
     component: () => import('@/views/base/viewer'),
   },
+  {
+    path: '/3dmodel',
+    name: 'Model',
+    component: () => import('@/views/base/model/glb/index.vue'),
+  },
 ]
 
 const router = new VueRouter({
