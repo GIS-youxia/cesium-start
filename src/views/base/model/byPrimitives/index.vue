@@ -48,29 +48,32 @@ export default {
         }),
       )
       model.readyPromise
-        .then(function (model) {
-          const camera = viewer.camera
-          // Zoom to model
-          const controller = scene.screenSpaceCameraController
-          const r =
-            2.0 * Math.max(model.boundingSphere.radius, camera.frustum.near)
-          controller.minimumZoomDistance = r * 0.5
-
-          const center = Cesium.Matrix4.multiplyByPoint(
-            model.modelMatrix,
-            model.boundingSphere.center,
-            new Cesium.Cartesian3(),
-          )
-          const heading = Cesium.Math.toRadians(230.0)
-          const pitch = Cesium.Math.toRadians(-20.0)
-          camera.lookAt(
-            center,
-            new Cesium.HeadingPitchRange(heading, pitch, r * 2.0),
-          )
+        .then((m) => {
+          this.handleZoomToModel(m)
         })
         .catch(function (error) {
           window.alert(error)
         })
+    },
+    handleZoomToModel(model) {
+      const camera = viewer.camera
+      const scene = viewer.scene
+      // Zoom to model
+      const controller = scene.screenSpaceCameraController
+      const r = 2.0 * Math.max(model.boundingSphere.radius, camera.frustum.near)
+      controller.minimumZoomDistance = r * 0.5
+
+      const center = Cesium.Matrix4.multiplyByPoint(
+        model.modelMatrix,
+        model.boundingSphere.center,
+        new Cesium.Cartesian3(),
+      )
+      const heading = Cesium.Math.toRadians(230.0)
+      const pitch = Cesium.Math.toRadians(-20.0)
+      camera.lookAt(
+        center,
+        new Cesium.HeadingPitchRange(heading, pitch, r * 2.0),
+      )
     },
   },
 }
