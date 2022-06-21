@@ -99,7 +99,7 @@ const viewerInit = (cesiumContainer) => {
   viewer.scene.screenSpaceCameraController.inertiaZoom = 0
   //关闭深度测试
   viewer.scene.globe.depthTestAgainstTerrain = false
-  setView(viewer)
+  // setView(viewer)
   return viewer
 }
 

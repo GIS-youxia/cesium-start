@@ -50,6 +50,16 @@ const routes = [
     name: 'positonBar',
     component: () => import('@/views/components/positionBar/index.vue'),
   },
+  {
+    path: '/base/camera/base',
+    name: 'CameraBase',
+    component: () => import('@/views/base/camera/index.vue'),
+  },
+  {
+    path: '/base/camera/advance',
+    name: 'CameraAdvance',
+    component: () => import('@/views/base/camera/advance.vue'),
+  },
 ]
 
 const router = new VueRouter({

@@ -23,6 +23,8 @@
     <router-link to="/components/positionBar" class="nav-item"
       >位置栏</router-link
     >
+    <router-link to="/base/camera/base" class="nav-item">相机视角控制</router-link>
+    <router-link to="/base/camera/advance" class="nav-item">相机动画与相机动态交互</router-link>
   </div>
 </template>
 <script>
