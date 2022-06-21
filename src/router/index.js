@@ -40,6 +40,11 @@ const routes = [
     name: 'terrain',
     component: () => import('@/views/base/layers/terrain/index.vue'),
   },
+  {
+    path: '/base/coordinate/transform',
+    name: 'coordinateTransform',
+    component: () => import('@/views/base/coordinate/transform/index.vue'),
+  },
 ]
 
 const router = new VueRouter({

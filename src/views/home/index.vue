@@ -8,9 +8,18 @@
     <router-link to="/quickstart" class="nav-item">quickStart</router-link>
     <router-link to="/widget" class="nav-item">widget</router-link>
     <router-link to="/viewer" class="nav-item">Viewer</router-link>
-    <router-link to="/addModelByEntity" class="nav-item">addModelByEntity</router-link>
-    <router-link to="/addModelByPrimitives" class="nav-item">addModelByPrimitives</router-link>
-    <router-link to="/base/layers/terrain" class="nav-item">加载地形</router-link>
+    <router-link to="/addModelByEntity" class="nav-item"
+      >addModelByEntity</router-link
+    >
+    <router-link to="/addModelByPrimitives" class="nav-item"
+      >addModelByPrimitives</router-link
+    >
+    <router-link to="/base/layers/terrain" class="nav-item"
+      >加载地形</router-link
+    >
+    <router-link to="/base/coordinate/transform" class="nav-item"
+      >坐标转换</router-link
+    >
   </div>
 </template>
 <script>
