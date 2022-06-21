@@ -10,6 +10,7 @@
     <router-link to="/viewer" class="nav-item">Viewer</router-link>
     <router-link to="/addModelByEntity" class="nav-item">addModelByEntity</router-link>
     <router-link to="/addModelByPrimitives" class="nav-item">addModelByPrimitives</router-link>
+    <router-link to="/base/layers/terrain" class="nav-item">加载地形</router-link>
   </div>
 </template>
 <script>

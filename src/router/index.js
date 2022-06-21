@@ -35,6 +35,11 @@ const routes = [
     name: 'addModelByPrimitives',
     component: () => import('@/views/base/model/byPrimitives'),
   },
+  {
+    path: '/base/layers/terrain',
+    name: 'terrain',
+    component: () => import('@/views/base/layers/terrain/index.vue'),
+  },
 ]
 
 const router = new VueRouter({
