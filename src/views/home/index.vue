@@ -20,6 +20,9 @@
     <router-link to="/base/coordinate/transform" class="nav-item"
       >坐标转换</router-link
     >
+    <router-link to="/components/positionBar" class="nav-item"
+      >位置栏</router-link
+    >
   </div>
 </template>
 <script>

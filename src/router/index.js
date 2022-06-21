@@ -45,6 +45,11 @@ const routes = [
     name: 'coordinateTransform',
     component: () => import('@/views/base/coordinate/transform/index.vue'),
   },
+  {
+    path: '/components/positionBar',
+    name: 'positonBar',
+    component: () => import('@/views/components/positionBar/index.vue'),
+  },
 ]
 
 const router = new VueRouter({
