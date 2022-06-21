@@ -7,7 +7,7 @@
   <div class="widget-container" ref="widgetDom"></div>
 </template>
 <script>
-const Cesium = window.Cesium
+import * as Cesium from 'cesium'
 const extent = Cesium.Rectangle.fromDegrees(100, 10, 120, 70)
 Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent
 Cesium.Camera.DEFAULT_VIEW_FACTOR = 0.2

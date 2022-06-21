@@ -7,7 +7,7 @@
   <div class="add-model-by-primitives-container" ref="viewerDom"></div>
 </template>
 <script>
-const Cesium = window.Cesium
+import * as Cesium from 'cesium'
 const url = '/data/SampleData/models/CesiumAir/Cesium_Air.glb'
 const height = 5000
 let viewer

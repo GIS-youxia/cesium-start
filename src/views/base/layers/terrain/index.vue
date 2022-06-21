@@ -7,13 +7,12 @@
   <div class="viewer-container" ref="viewerDOM"></div>
 </template>
 <script>
-import * as Cesium from 'cesium'
-import 'cesium/Build/Cesium/Widgets/widgets.css'
+import {Viewer} from 'cesium'
 let viewer
 export default {
   mounted() {
     const viewerDOM = this.$refs.viewerDOM
-    viewer = new Cesium.Viewer(viewerDOM, {
+    viewer = new Viewer(viewerDOM, {
       infoBox: false,
     })
   },

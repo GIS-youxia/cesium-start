@@ -20,7 +20,7 @@
   </div>
 </template>
 <script>
-const Cesium = window.Cesium
+import * as Cesium from 'cesium'
 let viewer
 export default {
   data() {
@@ -104,7 +104,6 @@ export default {
         shadows: true,
         shouldAnimate: true,
       })
-      window.viewer = viewer
       const url = '/data/SampleData/models/CesiumAir/Cesium_Air.glb'
       const height = 5000
       this.handleCreateModel(url, height)

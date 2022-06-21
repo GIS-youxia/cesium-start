@@ -25,7 +25,7 @@
  * 
   */
 
-const {
+import {
   Rectangle,
   ImageryLayer,
   UrlTemplateImageryProvider,
@@ -36,7 +36,7 @@ const {
   WebMapTileServiceImageryProvider,
   GeographicTilingScheme,
   WebMercatorTilingScheme
-} = window.Cesium
+} from 'cesium'
 import axios from 'axios'
 import x2js from 'xml2js'
 import gisUrlConfig from '@/config/gisUrlConfig'

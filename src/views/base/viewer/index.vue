@@ -7,7 +7,7 @@
   <div class="viewer-container" ref="viewerDom"></div>
 </template>
 <script>
-const { Viewer, Rectangle, Camera } = window.Cesium
+import { Viewer, Rectangle, Camera } from 'cesium'
 // 视图定位到中国范围内
 const extent = Rectangle.fromDegrees(100, 10, 120, 70)
 Camera.DEFAULT_VIEW_RECTANGLE = extent
