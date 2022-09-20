@@ -14,8 +14,14 @@ import layerUtil from '@/utils/cesium/imageryLayerUtil'
 export default {
   name: '',
   components: { CesiumCom },
+  data() {
+    return {
+      _viewer: {},
+    }
+  },
   methods: {
     handleViewerInited(viewer) {
+      this._viewer = viewer
       layerUtil.addTDTLayer(viewer, 'img', 'img')
       layerUtil.addTDTLayer(viewer, 'cia', 'cia')
       layerUtil.addTDTLayer(viewer, 'ibo', 'ibo')
